@@ -1,0 +1,261 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+/* styling for the sidebar */
+.sidebar {
+  width: 30%;
+  max-width: 400px;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+/* styling for the sidebar input component */
+.sidebar input {
+  width: calc(100% - 40px);
+  padding: 10px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #f0f2f5;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.sidebar li {
+  padding: 15px 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.sidebar li:hover {
+  background-color: #f0f2f5;
+}
+
+.sidebar li h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.sidebar li p {
+  margin: 5px 0 0;
+  color: #888;
+  font-size: 14px;
+}
+
+.sidebar button {
+  margin: 20px;
+  padding: 10px;
+  background-color: #25d366;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.sidebar button:hover {
+  background-color: #1cb954;
+}
+/* styling for the chat space */
+.chat {
+  flex-grow: 1;
+  background-color: #ece5dd;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat h2 {
+  background-color: #075e54;
+  color: #fff;
+  margin: 0;
+  padding: 15px 20px;
+  font-size: 18px;
+}
+/* styling for the message input */
+.messages {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.message {
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  max-width: 60%;
+}
+
+.message span {
+  display: block;
+  color: #888;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.message-input {
+  display: flex;
+  padding: 10px;
+  background-color: #f0f2f5;
+  border-top: 1px solid #ddd;
+}
+
+.message-input input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.message-input button {
+  padding: 10px 20px;
+  background-color: #25d366;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.message-input button:hover {
+  background-color: #1cb954;
+}
+/* sidebar.css */
+
+.sidebar {
+  width: 30%;
+  max-width: 400px;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners for the sidebar */
+}
+/* styling for the search bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #f0f2f5;
+  border-radius: 20px; /* Rounded search bar */
+}
+
+.search-icon {
+  color: #888;
+  margin-right: 10px;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f0f2f5;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.conversation-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.conversation-item:hover {
+  background-color: #f0f2f5;
+}
+
+.profile-picture {
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%; /* Making the image round */
+  margin-right: 10px;
+}
+
+.conversation-info {
+  flex-grow: 1;
+}
+
+.plus-icon {
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #25d366;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1cb954;
+}
+
+.message {
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  max-width: 60%;
+}
+
+.sent-message {
+  background-color: #DCF8C6; /* Light green background for sent messages */
+  align-self: flex-end; 
+}
+
+.received-message {
+  background-color: #fff; /* White background for received messages */
+  align-self: flex-start;
+}
+
+.message span {
+  display: block;
+  color: #888;
+  font-size: 12px;
+  margin-top: 5px;
+}
+/* styling for not selecting any conversation */
+.chat-not-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #ece5dd;
+}
+
+.chat-not-found h2 {
+  color: #888;
+  font-size: 24px;
+  text-align: center;
+}
